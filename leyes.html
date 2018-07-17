@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Leyes de proposiciones</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+	minimum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<style >
+		table tr td {
+			padding: 10px 15px;
+		}
+		table p {
+			margin: 5px 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container" style="height:auto;">
+		<div class="masthead">
+	        <h2 class="text-muted" style="margin:20px 0">CARL OSCAR</h2>
+
+	        <nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-3">
+	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	            <span class="navbar-toggler-icon"></span>
+	            </button>
+	            <div class="collapse navbar-collapse" id="navbarCollapse">
+		            <ul class="navbar-nav text-md-center nav-justified w-100">
+		            	<li class="nav-item active">
+		                	<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+		              	</li>
+		            	<li class="nav-item dropdown">
+		                	<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Proposiciones</a>
+		                	<div class="dropdown-menu" aria-labelledby="dropdown01">
+		                  		<a class="dropdown-item" href="proposiciones/tablas.html">Tablas de verdad</a>
+		                  		<a class="dropdown-item" href="leyes.html">Leyes</a>
+		                  		<a class="dropdown-item" href="proposiciones/practica.html">Practica</a>
+		                	</div>
+		              	</li>
+		              	<li class="nav-item dropdown">
+		                	<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conjuntos</a>
+		                	<div class="dropdown-menu" aria-labelledby="dropdown01">
+		                  		<a class="dropdown-item" href="leyes.html#tConjuntos">Leyes</a>
+		                  		<a class="dropdown-item" href="conjuntos/ejercicio.html">Practica</a>
+		                	</div>
+		              	</li>
+		              	<li class="nav-item">
+		                	<a class="nav-link" href="div/practica.html">Divisibilidad</a>
+		              	</li>
+		              	<li class="nav-item">
+		                	<a class="nav-link" href="sistemas/sistemas.html">Sistemas numéricos</a>
+		              	</li>
+		              	<li class="nav-item">
+		                	<a class="nav-link" href="#">No disponible</a>
+		              	</li>
+		            </ul>
+	          	</div>
+	        </nav>
+        </div><!--Fin de menu-->
+        <br />
+
+        <h1 id="tProposiciones">Leyes de proposiciones</h1>
+
+		<table>
+			<tr>
+				<td>
+					<p>Leyes de idempotencia</p>
+					<p>p &#94; p = p</p>
+					<p>p v p = p</p>
+				</td>
+				<td>
+					<p>Leyes de identidad</p>
+					<p>p &#94; t = p</p>
+					<p>p v f = p</p>
+				</td>
+				<td>
+					<p>Leyes inversas</p>
+					<p>p &#94; (&#126;p) = f</p>
+					<p>p v (&#126;p) = t</p>
+				</td>
+				<td>
+					<p>Leyes de dominio</p>
+					<p>p &#94; f = f</p>
+					<p>p v t = t</p>
+				</td>
+				<td>
+					<p>Leyes conmutativas</p>
+					<p>p &#94; q = q &#94; p</p>
+					<p>p v q = q v p</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Ley de doble negación</p>
+					<p>&#126;(&#126;p) = p</p>
+				</td>
+				<td>
+					<p>Leyes asociativas</p>
+					<p>p &#94; (q &#94; r) = (p &#94; q) &#94; r</p>
+					<p>p v (q v r) = (p v q) v r</p>
+				</td>
+				<td>
+					<p>Leyes distributivas</p>
+					<p>p v (q &#94; r) = (p v q) &#94; (p v r)</p>
+					<p>p &#94; (q v r) = (p &#94; q) v (p &#94; r)</p>
+				</td>
+				<td>
+					<p>Leyes de De Morgan</p>
+					<p>&#126;(p &#94; q) = &#126;p v &#126;q</p>
+					<p>&#126;(p v q) = &#126;p &#94; &#126;q</p>
+				</td>
+				<td>
+					<p>Leyes de absorción</p>
+					<p>p v (p &#94; q) = p</p>
+					<p>p &#94; (p v q) = p</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Ley de conversión de<br />la implicación</p>
+					<p>p &rarr; q = &#126;p v q</p>
+					<p>q &rarr; p = &#126;q v p</p>
+				</td>
+				<td>
+					<p>Ley contrapositiva</p>
+					<p>p &rarr; q = &#126;q &rarr; &#126;p</p>
+				</td>
+				<td>
+					<p>Ley de reducción al <br />absurdo</p>
+					<p>p &rArr; q &equiv; (p &#94; &#126;q) &rArr; f</p>
+				</td>
+			</tr>
+		</table>
+
+		<h1 id="tConjuntos">Leyes de conjuntos</h1>
+
+		<table>
+			<tr>
+				<td>
+					<p>Leyes de idempotencia</p>
+					<p>A &cup; A = A</p>
+					<p>A &cap; A = A</p>
+				</td>
+				<td>
+					<p>Leyes de identidad</p>
+					<p>A &cup; &empty; = A</p>
+					<p>A &cup; U = A</p>
+				</td>
+				<td>
+					<p>Leyes inversas</p>
+					<p>A &cup; A' = U</p>
+					<p>A &cap; A' = &empty;</p>
+				</td>
+				<td>
+					<p>Leyes de dominio</p>
+					<p>A &cup; U = U</p>
+					<p>A &cap; &empty; = &empty;</p>
+				</td>
+				<td>
+					<p>Leyes conmutativas</p>
+					<p>A &cup; B = B &cup; A</p>
+					<p>a &cap; B = B &cap; A</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Ley de doble <br />complemento</p>
+					<p>( A' )' = A</p>
+				</td>
+				<td>
+					<p>Leyes asociativas</p>
+					<p>A &cup; (B &cup; C) = (A &cup; B) &cup; C</p>
+					<p>A &cap; (B &cap; C) = (A &cap; B) &cap; C</p>
+				</td>
+				<td>
+					<p>Leyes distributivas</p>
+					<p>A &cup; (B &cap; C) = <br />(A &cup; B) &cap; (A &cup; C)</p>
+					<p>A &cap; (B &cup; C) = <br />(A &cap; B) &cup; (A &cap; C)</p>
+				</td>
+				<td>
+					<p>Leyes de De Morgan</p>
+					<p>(A &cup; B)' = A' &cap; B'</p>
+					<p>(A &cap; B)' = A' &cup; B'</p>
+				</td>
+				<td>
+					<p>Leyes de absorción</p>
+					<p>A &cup; (A &cap; B) = A</p>
+					<p>A &cap; (A &cup; B) = A</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Si A &sube; B,<br />entonces A &cap; B = A</p>
+				</td>
+				<td>
+					<p>Si A &sube; B,<br />entonces B' &sube; A'</p>
+				</td>
+				<td>
+					<p>Si A &sube; B,<br />entonces A &cup; B = B</p>
+				</td>
+				<td>
+					<p>A &oplus; B = A &cup; B - A &cap; B</p>
+				</td>
+				<td>
+					<p>A - B = A &cap; B'</p>
+				</td>
+			</tr>
+		</table>
+		<br />
+	</div><!--Final del cuerpo-->
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="proposiciones.js"></script>
+
+</body>
+</html>

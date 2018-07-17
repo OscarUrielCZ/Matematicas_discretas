@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Practica</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+	minimum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../estilo.css">
+	<style>
+		input[type="button"] {
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="masthead">
+	        <h2 class="text-muted" style="margin:20px 0">CARL OSCAR</h2>
+
+	        <nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-3">
+	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	            <span class="navbar-toggler-icon"></span>
+	            </button>
+	            <div class="collapse navbar-collapse" id="navbarCollapse">
+		            <ul class="navbar-nav text-md-center nav-justified w-100">
+		            	<li class="nav-item active">
+		                	<a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
+		              	</li>
+		            	<li class="nav-item dropdown">
+		                	<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Proposiciones</a>
+		                	<div class="dropdown-menu" aria-labelledby="dropdown01">
+		                  		<a class="dropdown-item" href="../proposiciones/tablas.html">Tablas de verdad</a>
+		                  		<a class="dropdown-item" href="../leyes.html">Leyes</a>
+		                  		<a class="dropdown-item" href="../proposiciones/practica.html">Practica</a>
+		                	</div>
+		              	</li>
+		              	<li class="nav-item dropdown">
+		                	<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conjuntos</a>
+		                	<div class="dropdown-menu" aria-labelledby="dropdown01">
+		                  		<a class="dropdown-item" href="../leyes.html#tConjuntos">Leyes</a>
+		                  		<a class="dropdown-item" href="../conjuntos/ejercicio.html">Practica</a>
+		                	</div>
+		              	</li>
+		              	<li class="nav-item">
+		                	<a class="nav-link" href="practica1.html">Matrices</a>
+		              	</li>
+		              	<li class="nav-item">
+		                	<a class="nav-link" href="../sitemas/sistemas.html">Sistemas Numéricos</a>
+		              	</li>
+		              	<li class="nav-item">
+		                	<a class="nav-link" href="../div/practicas.html">Divisibilidad</a>
+		              	</li>
+		            </ul>
+	          	</div>
+	        </nav>
+        </div><!--menu-->
+        <br />
+
+		<div style="width:75%; margin:auto; ">
+			<input type="button" value="Grafo" id="btngrafo" />
+			<input type="button" value="Vertice y Arista" id="btnVE" />
+			<input type="button" value="Grafo simple" id="btngrsimple" />
+			<input type="button" value="Grafo completo" id="btngrcomp" />
+			<input type="button" value="Grafo cycle" id="btngrcycle" />
+			<input type="button" value="Grafo bipartito" id="btngrbipartito" />
+			<input type="button" value="Grafo ponderado" id="btngrpon" />
+			<input type="button" value="Grafo isomórfico" id="btngriso" />
+			<input type="button" value="Camino" id="btncamino" />
+			<input type="button" value="Ciclos y circuitos" id="btncircuito" />
+			<input type="button" value="Grafo conexo e iconexo" id="btngrconexo" />
+			<input type="button" value="Grafo Euleriano" id="btngreuler" />
+			<input type="button" value="Grafo Hamiltoneano" id="btngrhamilton" />
+
+		</div><!--final de seccion 0-->
+
+		<br /><br />
+
+
+		<div id="dgrafo" style="width:60%; margin:auto; display:none; ">
+			<p>
+				Grafo: <br />
+				Un grafo G = G(V) con un conjunto de vértices, V es una familia de asociaciones en pares denotados como G = (a, b), donde (a, b)&isin;V, el cual indica cuales vértices deberían estar conectados. Al conjunto E se le conoce como el conjunto de aristas, y los vértices o nodos "a" y "b" se les conoce como puntos finales de la arista E. <br />
+				Si hay flechas en todas las aristas de un grafo, es decir, que todas las aristas están dirigidas, se le conoce como grafo dirigido.
+			</p>
+			<img src="g1.png" />
+		</div>
+		
+		<div id="dVE" style="width:60%; margin:auto; display:none; ">
+			<p>
+				Vertices y aristas: <br />
+				1. Suponga un conjunto de objetos inicial donde es posible representar cada objeto por un punto en el plano. <br />
+				2 Si dos objetos del conjunto están relacionados de alguna manera, se puede indicar la relación por una linea que una esos dos puntos que representan los objetos V1 y V2, se puede representar como: 
+			</p>
+			<img src="g2.gif">
+			<p>
+			<br />
+				Se dice que la arista E1 es incidente con los vértices V1 y V2; o bien, V1 y V2 se llaman puntos extremos de E1. <br />
+				Los puntos extremos de una arista E1 se llaman vértices adyacentes. <br>
+				Se dice que dos aristas E1 y E2 son aristas adyacentes, si por lo menos tienen un punto extremo en común.
+			</p>
+			<img src="g3.png">
+			<p>
+				<br />
+				Si dos aristas comparten dos extremos, son aristas paralelas.
+			</p>
+			<img src="g4.jpg">
+			<p>
+				<br />
+				Una arista con un solo punto extremo se llama bucle. Un bucle es una arista que es dos veces incidente con el mismo punto extremo. <br />
+				Si un vertice no es ningún punto extremo de alguna arista, se dice que está aislado.
+			</p>
+		</div>
+
+		<div id="dgrsimple" style="width:60%; margin:auto; display:none; ">
+			<p>
+				Grafo simple: <br>
+				Un grafo G se conoce como simple si no tiene bucles ni aristas paralelas. <br />
+			</p>
+			<img src="g5.png">
+		</div>
+
+		<div id="dgrcomp" style="width:60%; margin:auto; display:none; ">
+			<p>
+				Grafo completo: <br />
+				Un grafo simple con una arista entre cada dos vertices distintos se conoce como grafo completo. Un grafo completo con n vertices se denota como Kn.
+			</p>
+			<img src="g6.png">
+			<p>
+				C(n, r) = (n / r) = n! / (n-r)! n!
+			</p>
+		</div>
+
+		<div id="dgrcycle" style="width:60%; margin:auto; display:none; ">
+			<p>
+				Grafo cycle: <br />
+				Un grafo cycle Cn de longitud n&ge;3 consiste de n vertices V1, V2, ..., Vn y aristas {ei, ei+4} donde 1&le;i&le;n
+				<br /><br />
+				Wheel: 
+				Un grafo rueda de Wn de longitud n&ge;3 se obtiene de Cn añadiendo un vertice V dentro de Cn y conectando este vértice a cada vértice de Cn.
+
+			</p>
+			<img src="">
+		</div>
+
+		<div id="dgrbipartito" style="width:60%; margin:auto; display:none; ">
+			<p>
+				Grafo bipartito: <br />
+				Si el conjunto de vértices de un grado simple G = (V, E) se puede partir en dos conjuntos disjuntos (no vacíos) V1 y V2; así cada arista en G es insidente con un vertice en V1 y un vertice en V2, entonces G es bipartito.
+			</p>
+			<img src="g7.png">
+			<p>
+				<br />
+				Grafo bipartito completo: <br />
+				Sea G un grafo bipartito con |V1| = m |V2| = n. Si esta arista pasa entre cada vertice V1 y V2, G es un grafo bipartito completo y se denota por K(m,n).
+			</p>
+		</div>
+
+		<div id="dgrpon" style="width:60%; margin:auto; display:none; ">
+			<p>
+				Grafo ponderado: <br />
+				Un grafo simple donde la arista "e" se le asigna un número real positivo W, se conoce como grafo ponderad. El número W representa el peso de cada arista; por lo que un grafo ponderado se le considera como una tripleta (V, E, F) donde F: E 	&rarr; R, por ejemplo 
+			</p>
+			<img src="g8.gif">
+		</div>
+
+		<div id="dgriso" style="width:60%; margin:auto; display:none; ">
+			<p>
+				Grafo isomorfico: <br />
+				En teoría de grafos, un isomorfismo entre dos grafos G y H es una biyección f entre los conjuntos de sus vértices que preserva la relación de adyacencia. Es decir, cualquier par de vértices u y v de G son adyacentes si y solo si lo son sus imágenes, f(u) y f(v), en H.
+			</p>
+			<img src="g9.jpg">
+		</div>
+
+		<div id="dcamino" style="width:60%; margin:auto; display:none; ">
+			<p>
+				Camino (path): <br />
+				Sean V0 y Vn dos vertices de un grafo. La longitud del camino n de V0 a Vn es una secuencia de vertices Vi y aristas ei de la forma V0 - ei- V1 - ei - V2 --- en - Vn donde cada arista ei es incidente con los vertices Vi-1 y Vi donde n &ge; i &ge;1 los vertices V0 y Vn son los puntos finales del grafo. <br />
+				Un camino simple de V0 a Vn no contiene vertices repartidos salvo una excepción, que este podría ser el mismo punto final.
+			</p>
+			<img src="g10.jpg">
+		</div>
+
+		<div id="dcircuito" style="width:60%; margin:auto; display:none; ">
+			<p>
+				Circuito: <br />
+				Un camino con puntos finales Vo, Vn es cerrado si Vo = Vn; en otro caso se considera abierto. <br>
+				Un camino simple cerrado se conoce como ciclo; un camino cerrado con aristas no repetidas se conoce como circuito.
+			</p>
+			<img src="g11.jpg">
+			<table>
+				<tr>
+					<th>Término</th><th>Significado</th>
+				</tr>
+				<tr>
+					<td>Camino (path)</td>
+					<td>Secuencia Vo - ei- V1 - ei - V2 --- en - Vn, donde ei = {Vi-1, Vi}, donde 1&le;i&le;n</td>
+				</tr>
+				<tr>
+					<td>Camino simple</td>
+					<td>Todos sus vertices son distintos, los puntos finales podrían ser los mismos.</td>
+				</tr>
+				<tr>
+					<td>Camino cerrado</td>
+					<td>Los puntos finales son los mismos</td>
+				</tr>
+				<tr>
+					<td>Camino abierto</td>
+					<td>Los puntos finales NO son los mismos</td>
+				</tr>
+				<tr>
+					<td>Ciclos</td>
+					<td>Camino siempre cerrado</td>
+				</tr>
+				<tr>
+					<td>Circuito</td>
+					<td>Camino cerrado, aristas no repetidas</td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="dgrconexo" style="width:60%; margin:auto; display:none; ">
+			<p>Grafo conexo: </p>
+			<img src="">
+		</div>
+
+		<div id="dgreuler" style="width:60%; margin:auto; display:none; ">
+			<p>Grafo Euleriano: </p>
+			<img src="">
+		</div>
+
+		<div id="dgrhamilton" style="width:60%; margin:auto; display:none; ">
+			<p>Grafo Hamiltoniano: </p>
+			<img src="">
+		</div>
+
+		<br /><br />
+	</div><!--Final del cuerpo-->
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="practica1.js"></script>
+</body>
+</html>

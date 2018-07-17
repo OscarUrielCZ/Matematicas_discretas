@@ -1,0 +1,10 @@
+.container 
+{
+	background-color: rgba(130, 130, 130, .2);
+	height: auto;
+}
+
+input[type="button"]
+{
+	width: 120px;
+}
