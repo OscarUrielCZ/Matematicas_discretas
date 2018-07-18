@@ -9,9 +9,6 @@ var dgrpon = document.getElementById("dgrpon");
 var dgriso = document.getElementById("dgriso");
 var dcamino = document.getElementById("dcamino");
 var dcircuito = document.getElementById("dcircuito");
-var dgrconexo = document.getElementById("dgrconexo");
-var dgreuler = document.getElementById("dgreuler");
-var dgrhamilton = document.getElementById("dgrhamilton");
 
 //botones
 var btngrafo = document.getElementById("btngrafo");
@@ -24,9 +21,6 @@ var btngrpon = document.getElementById("btngrpon");
 var btngriso = document.getElementById("btngriso");
 var btncamino = document.getElementById("btncamino");
 var btncircuito = document.getElementById("btncircuito");
-var btngrconexo = document.getElementById("btngrconexo");
-var btngreuler = document.getElementById("btngreuler");
-var btngrhamilton = document.getElementById("btngrhamilton");
 
 //eventos del boton
 btngrafo.addEventListener("click", function(){ mostrar(dgrafos); });
@@ -40,16 +34,11 @@ btngrpon.addEventListener("click", function(){ mostrar(dgrpon); });
 btngriso.addEventListener("click", function(){ mostrar(dgriso); });
 btncamino.addEventListener("click", function(){ mostrar(dcamino); });
 btncircuito.addEventListener("click", function(){ mostrar(dcircuito); });
-btngrconexo.addEventListener("click", function(){ mostrar(dgrconexo); });
-btngreuler.addEventListener("click", function(){ mostrar(dgreuler); });
-btngrhamilton.addEventListener("click", function(){ mostrar(dgrhamilton); });
 
-var divisiones = [dgrafos, dVE, dgrsimple, dgrcomp, dgrcycle, dgrbipartito, dgrpon, dgriso, dcamino, dcircuito, dgrconexo, dgreuler, dgrhamilton];
+var divisiones = [dgrafos, dVE, dgrsimple, dgrcomp, dgrcycle, dgrbipartito, dgrpon, dgriso, dcamino, dcircuito];
 
-function mostrar(division)
-{
-	for(var i of divisiones)
-	{
+function mostrar(division) {
+	for(var i of divisiones) {
 		if(i === division)
 			i.style.display = "block";
 		else
