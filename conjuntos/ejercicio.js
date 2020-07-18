@@ -44,13 +44,13 @@ function rellena()
 
 		for(var i=0;i<a;i++)
 		{
-			dato = prompt("Para A");
+			dato = prompt((i+1)+"/"+a+". Para A");
 			conjA.push(dato);
 		}
 
 		for(var i=0;i<b;i++)
 		{
-			dato = prompt("Para B");
+			dato = prompt((i+1)+"/"+b+". Para B");
 			conjB.push(dato);
 		}
 		botones.style.display = "block";
@@ -59,47 +59,18 @@ function rellena()
 		alert("Rellena los campos");
 }
 
-function fca(){ resulta(conjA); }
-function fcb(){ resulta(conjB); }
-function unir()
-{
-	var j, i, b;
-	var u = conjA.concat(conjB);
-	var n = [];
-	var r = [];
-	for(j of conjA)
-	{
-		for(i of conjB)
-		{
-			if(i === j)
-				n.push(i);
-		}
-	}
-	for(j of n)
-	{
-		b = 0;
-		for(i of u)
-		{
-			if(i === j)
-				b = 1;
-		}
-
-		if(!b)
-			r.push(j);
-	}
-	resulta(r);
+function fca() { resulta(conjA); }
+function fcb() { resulta(conjB); }
+function unir() {
+	var r = new Set(conjA.concat(conjB));
+	resulta(Array.from(r));
 }
-function interseccion()
-{
+function interseccion() {
 	var r = [];
 	for(var j of conjA)
-	{
 		for(var i of conjB)
-		{
 			if(i === j)
 				r.push(i);
-		}
-	}
 	resulta(r);
 }
 function compA()
